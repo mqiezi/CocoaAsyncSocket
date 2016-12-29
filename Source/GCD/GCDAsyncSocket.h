@@ -348,7 +348,7 @@ typedef NS_ENUM(NSInteger, GCDAsyncSocketError) {
  * Returns whether the socket is disconnected or connected.
  * 
  * A disconnected socket may be recycled.
- * That is, it can used again for connecting or listening.
+ * That is, it can be used again for connecting or listening.
  * 
  * If a socket is in the process of connecting, it may be neither disconnected nor connected.
 **/
@@ -788,7 +788,7 @@ typedef NS_ENUM(NSInteger, GCDAsyncSocketError) {
  * 
  * You can also perform additional validation in socketDidSecure.
 **/
-- (void)startTLS:(nullable NSDictionary <NSString*,NSNumber*>*)tlsSettings;
+- (void)startTLS:(nullable NSDictionary <NSString*,NSObject*>*)tlsSettings;
 
 #pragma mark Advanced
 
